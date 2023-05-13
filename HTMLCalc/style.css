@@ -1,0 +1,50 @@
+.num-wrapper {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+}
+html {
+    height: 100vh;
+}
+body {
+    height: 100vh;
+    background-color: black;
+}
+
+.operator {
+    /* dark orange */
+    color: #ff8c00;
+}
+
+button {
+    background-color: black;
+    color: white;
+    margin: 2px;
+    height: 60px;
+    font-size: 30px;
+}
+
+.calc {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#zero {
+    grid-column: 1 / 3;
+}
+
+#ac {
+    grid-column: 1 / 4;
+}
+
+input {
+    background-color: black;
+    color: white;
+    width: 390px;
+    height: 60px;
+    font-size: 36px;
+    text-align: right;
+}  
