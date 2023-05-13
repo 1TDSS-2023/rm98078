@@ -2,6 +2,9 @@ const textField = document.querySelector("#text-field");
 
 function inserirValor(num) {
   let operatorBefore = false;
+  if (textField.value == "" && ["*", "/", "+", "-", "0"].includes(num)) {
+    return
+  }
   if (num == "*" || num == "/" || num == "+" || num == "-") {
     if (!operatorBefore) {
       textField.value += num;
@@ -25,4 +28,16 @@ function calcular() {
 
 function limpar() {
   textField.value = "";
+}
+
+function changeSymbol() {
+  if (textField.value[0] == "-") {
+    textField.value = textField.value.slice(1, textField.value.length);
+  } else {
+    textField.value = "-" + textField.value;
+  }
+}
+
+function porcentageCalc() {
+  textField.value = Math.round((textField.value / 100) * 1000000) / 1000000;
 }

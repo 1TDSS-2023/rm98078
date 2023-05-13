@@ -10,18 +10,20 @@
 <body>
     <main>
         <div class="calc">
-            <input id="text-field" type="text">
+            <input id="text-field" placeholder="0" type="text">
             <div class="num-wrapper">
-                <button class="operator" id="ac" onclick="limpar()">AC</button>
+                <button class="operator ac" id="ac" onclick="limpar()">C</button>
+                <button class=" operator-top operator" onclick="changeSymbol()" value="+/-" >+/-</button>
+                <button class=" operator-top operator" onclick="porcentageCalc()" value="%" >%</button>
                 <button class="operator" onclick="inserirValor(this.value)" value="/" >÷</button>
                 <button onclick="inserirValor(this.value)" value="7">7</button>
                 <button onclick="inserirValor(this.value)" value="8">8</button>
                 <button onclick="inserirValor(this.value)" value="9">9</button>
-                <button class="operator" onclick="inserirValor(this.value)" value="*" >X</button>
+                <button class="operator" onclick="inserirValor(this.value)" value="*" >x</button>
                 <button onclick="inserirValor(this.value)" value="4">4</button>
                 <button onclick="inserirValor(this.value)" value="5">5</button>
                 <button onclick="inserirValor(this.value)" value="6">6</button>
-                <button class="operator" onclick="inserirValor(this.value)" value="-">-</button>
+                <button class="operator" onclick="inserirValor(this.value)" value="-">−</button>
                 <button onclick="inserirValor(this.value)" value="1">1</button>
                 <button onclick="inserirValor(this.value)" value="2">2</button>
                 <button onclick="inserirValor(this.value)" value="3">3</button>
